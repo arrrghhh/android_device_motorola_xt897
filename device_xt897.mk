@@ -29,10 +29,6 @@ PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     sqlite3
 
-#custom settings
-PRODUCT_PACKAGES += \
-    PhotonQParts
-
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
@@ -68,5 +64,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keychars/keypad_8960.kcm:system/usr/keychars/keypad_8960.kcm
 
 $(call inherit-product, device/motorola/msm8960-common/modules/nfc/nfc.mk)
-$(call inherit-product-if-exists, vendor/motorola/xt897/xt897-vendor.mk)
+$(call inherit-product, vendor/motorola/xt897/xt897-vendor.mk)
 

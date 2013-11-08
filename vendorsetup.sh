@@ -15,4 +15,4 @@
 #
 
 add_lunch_combo full_xt897-userdebug
-add_lunch_combo custom_xt897-userdebug
+add_lunch_combo omni_xt897-userdebug
